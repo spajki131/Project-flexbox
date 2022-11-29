@@ -105,7 +105,42 @@ html {
 .menu {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  background-color: red;
+  height: 70px;
+  margin-top: 10px;
+  background-color: rgb(27, 27, 29);
+  font-family: "pt sans", "roboto", "arial", sans-serif;
+  padding: 15px 50px 15px 80px;
+}
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+.menu__item {
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 4rem;
+  margin: 0 20px;
+}
+.menu__item:hover {
+  border-bottom: 2px solid white;
+}
+.menu__item:nth-last-child(1) {
+  margin-left: auto;
+  border: 2px solid #777;
+}
+.menu__item:nth-last-child(1):hover {
+  border-color: white;
+}
+.menu__item:nth-last-child(1) .menu__link {
+  padding: 0 22px;
+}
+.menu__link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
 }
 
 .main-articles {
