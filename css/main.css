@@ -143,10 +143,68 @@ html {
   letter-spacing: 1px;
 }
 
+.article {
+  padding: 30px 50px;
+  color: #333;
+  text-align: center;
+}
+.article__image {
+  display: block;
+  width: 100%;
+}
+.article__title {
+  padding: 15px 0 10px;
+  font-family: "pt sans", "roboto", "arial", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.article__introduction {
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+.article__btn {
+  display: block;
+  width: 50%;
+  min-width: 150px;
+  margin: 10px auto;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  border: 2px solid black;
+  font-size: 1.8rem;
+  background-color: #8daae5;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.article__btn:hover {
+  background-color: white;
+}
+
 .main-articles {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  background-color: rgb(22, 169, 17);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #8daae5;
+}
+.main-articles__intro {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 60px 0 30px;
+  padding: 5px;
+  text-align: center;
+  font-size: 4.4rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  letter-spacing: 2px;
+}
+.main-articles .article {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .article-list {
