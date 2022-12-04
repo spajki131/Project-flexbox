@@ -231,5 +231,34 @@ html {
 .footer {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  background-color: rgb(200, 45, 177);
+  background-color: #8daae5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 20px 0;
+}
+.footer .sm-links {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.sm-links {
+  font-family: "arial", sans-serif;
+  color: blanchedalmond;
+}
+.sm-links__title {
+  margin: 20px 0 30px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.sm-links__item {
+  text-indent: 40px;
+  font-size: 1.8rem;
+}
+.sm-links__item--darken {
+  color: #341f00;
 }/*# sourceMappingURL=main.css.map */
